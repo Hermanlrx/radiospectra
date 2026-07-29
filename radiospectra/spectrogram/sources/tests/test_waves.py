@@ -13,6 +13,7 @@ from sunpy.net import attrs as a
 
 from radiospectra.spectrogram import Spectrogram
 from radiospectra.spectrogram.sources import WAVESSpectrogram
+from radiospectra.spectrogram.sources.waves import WAVESMeta
 from radiospectra.spectrogram.spectrogram_factory import SpectrogramFactory
 from radiospectra.tests.helpers import figure_test
 

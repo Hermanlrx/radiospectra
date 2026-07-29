@@ -119,7 +119,7 @@ def test_psp_rfs_lfr(parse_path_moc):
     assert spec.end_time.datetime == datetime(2019, 4, 10, 0, 1, 4, 997573)
     assert spec.wavelength.min.round(1) == 10.5 * u.kHz
     assert spec.wavelength.max == 1687.5 * u.kHz
-    assert spec.level == "L2"
+    assert spec.processing_level == "L2"
     assert spec.version == 1
 
 
@@ -227,7 +227,7 @@ def test_psp_rfs_hfr(parse_path_moc):
     assert spec.end_time.datetime == datetime(2019, 4, 10, 0, 1, 2, 758315)
     assert spec.wavelength.min == 1275.0 * u.kHz
     assert spec.wavelength.max == 19171.876 * u.kHz
-    assert spec.level == "L2"
+    assert spec.processing_level == "L2"
     assert spec.version == 1
 
 
